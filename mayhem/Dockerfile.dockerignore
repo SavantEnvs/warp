@@ -1,0 +1,5 @@
+# Overrides upstream's .dockerignore for `-f mayhem/Dockerfile` builds: the commit image must hold the
+# full repo including .git (the grader needs the history) and every source the suite reads.
+.DS_Store
+*.swp
+*~

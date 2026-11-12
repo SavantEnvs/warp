@@ -1,0 +1,9 @@
+project: savantenvs/warp
+target: fuzz_container
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_container/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_container
+    libfuzzer: true
+    timeout: 10
